@@ -1,0 +1,17 @@
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Domain\bin\Debug\net5.0\ShopManagement.Domain.deps.json
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Domain\bin\Debug\net5.0\ShopManagement.Domain.dll
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Domain\bin\Debug\net5.0\ref\ShopManagement.Domain.dll
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Domain\bin\Debug\net5.0\ShopManagement.Domain.pdb
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Domain\bin\Debug\net5.0\0_Framework.dll
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Domain\bin\Debug\net5.0\ShopManagement.Application.Contracts.dll
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Domain\bin\Debug\net5.0\0_Framework.pdb
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Domain\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Domain\obj\Debug\net5.0\ShopManagement.Domain.csprojAssemblyReference.cache
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Domain\obj\Debug\net5.0\ShopManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Domain\obj\Debug\net5.0\ShopManagement.Domain.AssemblyInfoInputs.cache
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Domain\obj\Debug\net5.0\ShopManagement.Domain.AssemblyInfo.cs
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Domain\obj\Debug\net5.0\ShopManagement.Domain.csproj.CoreCompileInputs.cache
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Domain\obj\Debug\net5.0\ShopManagement.Domain.csproj.CopyComplete
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Domain\obj\Debug\net5.0\ShopManagement.Domain.dll
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Domain\obj\Debug\net5.0\ref\ShopManagement.Domain.dll
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Domain\obj\Debug\net5.0\ShopManagement.Domain.pdb
