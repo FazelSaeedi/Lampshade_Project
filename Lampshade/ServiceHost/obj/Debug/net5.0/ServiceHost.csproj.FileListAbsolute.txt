@@ -167,3 +167,4 @@ D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ServiceHost\obj\Debug\net5.0\
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\ProductCategories\Create.cshtml.g.cs
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\ProductCategories\Edit.cshtml.g.cs
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\Products\Index.cshtml.g.cs

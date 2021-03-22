@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 using _0_Framework.Domain;
+using ShopManagement.Domain.ProductAgg;
 
 namespace ShopManagement.Domain.ProductCategoryAgg
 {
-    public class ProductCategory : EntityBase
+    public class  ProductCategory : EntityBase
     {
 
 
@@ -18,6 +20,13 @@ namespace ShopManagement.Domain.ProductCategoryAgg
         public string Keywords { get; private set; }
         public string MetaDescription { get; private set; }
         public string Slug { get; private set; }
+
+        public List<Product> Products { get; private set; }
+
+        public ProductCategory()
+        {
+            Products = new List<Product>();
+        }
 
 
         // Create New ProductCategory
