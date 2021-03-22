@@ -20,6 +20,15 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
         }
 
 
+        public List<ProductViewModel> GetProducts()
+        {
+            return _context.Products.Select(x => new ProductViewModel
+            {
+                Id = x.Id ,
+                Name = x.Name
+            }).ToList();
+        }
+
         public List<ProductViewModel> Search(ProductSearchModel searchModel)
         {
             var query = _context.Products
@@ -31,7 +40,9 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                 categoryId = x.CategoryId,
                 Code = x.Code ,
                 Picture = x.Picture ,
-                UnitPrice = x.UnitPrice
+                UnitPrice = x.UnitPrice ,
+                CreationDate = x.CreateionDate.ToString() ,
+                IsInstock = x.IsInStock
             });
 
             if (!string.IsNullOrWhiteSpace(searchModel.Name))

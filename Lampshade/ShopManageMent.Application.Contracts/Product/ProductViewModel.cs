@@ -9,5 +9,8 @@
         public double UnitPrice { get; set; }
         public string Category { get; set; }
         public long categoryId { get; set; }
+        public string CreationDate { get; set; }
+
+        public bool IsInstock { get; set; }
     }
 }
