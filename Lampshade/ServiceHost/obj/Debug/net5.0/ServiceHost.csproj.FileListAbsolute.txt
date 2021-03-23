@@ -181,3 +181,4 @@ D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ServiceHost\obj\Debug\net5.0\
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ServiceHost\bin\Debug\net5.0\01_LampShadeQuery.dll
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ServiceHost\bin\Debug\net5.0\01_LampShadeQuery.pdb
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\Slide\Default.cshtml.g.cs
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\ProductCategory\Default.cshtml.g.cs
