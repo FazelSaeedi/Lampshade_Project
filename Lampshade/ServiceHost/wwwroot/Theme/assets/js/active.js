@@ -435,7 +435,7 @@
     =============================================*/
     
     
-    $('[name="paymentMethod"]').on('click', function () {
+    $('[name="payment-method"]').on('click', function () {
 
         var $value = $(this).attr('value');
 
@@ -481,5 +481,11 @@
         slidesToShow: 1
     });
     /*=====  End of blog post gallery  ======*/
+    
+    
+	
+
+    
+
 
 })(jQuery);

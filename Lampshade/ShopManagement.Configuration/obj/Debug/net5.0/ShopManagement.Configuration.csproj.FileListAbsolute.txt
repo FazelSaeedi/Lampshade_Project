@@ -21,3 +21,5 @@ D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Configuration\
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Configuration\obj\Debug\net5.0\ShopManagement.Configuration.csproj.CopyComplete
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Application.dll
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Application.pdb
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\01_LampShadeQuery.dll
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\01_LampShadeQuery.pdb
