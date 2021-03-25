@@ -633,11 +633,26 @@
           "bin/placeholder/0_Framework.dll": {}
         }
       },
+      "InventoryManagement.Application.Contract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_Framework": "1.0.0",
+          "ShopManagement.Application.Contracts": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InventoryManagement.Application.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InventoryManagement.Application.Contract.dll": {}
+        }
+      },
       "InventoryManagement.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "0_Framework": "1.0.0"
+          "0_Framework": "1.0.0",
+          "InventoryManagement.Application.Contract": "1.0.0"
         },
         "compile": {
           "bin/placeholder/InventoryManagement.Domain.dll": {}
@@ -1951,6 +1966,11 @@
       "path": "../0_Framework/0_Framework.csproj",
       "msbuildProject": "../0_Framework/0_Framework.csproj"
     },
+    "InventoryManagement.Application.Contract/1.0.0": {
+      "type": "project",
+      "path": "../InventoryManagement.Application.Contract/InventoryManagement.Application.Contract.csproj",
+      "msbuildProject": "../InventoryManagement.Application.Contract/InventoryManagement.Application.Contract.csproj"
+    },
     "InventoryManagement.Domain/1.0.0": {
       "type": "project",
       "path": "../InventoryManagement.Domain/InventoryManagement.Domain.csproj",
@@ -1976,7 +1996,6 @@
     "net5.0": [
       "InventoryManagement.Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.0-preview.2.21154.2",
-      "Microsoft.EntityFrameworkCore.Design >= 6.0.0-preview.2.21154.2",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.0-preview.2.21154.2",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.0-preview.2.21154.2",
       "ShopManagement.Infrastructure.EFCore >= 1.0.0"
@@ -2034,12 +2053,6 @@
         "targetAlias": "net5.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": {
-            "target": "Package",
-            "version": "[6.0.0-preview.2.21154.2, )"
-          },
-          "Microsoft.EntityFrameworkCore.Design": {
-            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-            "suppressParent": "All",
             "target": "Package",
             "version": "[6.0.0-preview.2.21154.2, )"
           },

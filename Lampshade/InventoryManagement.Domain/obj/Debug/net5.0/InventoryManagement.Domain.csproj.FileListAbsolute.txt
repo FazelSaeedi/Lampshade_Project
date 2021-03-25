@@ -8,9 +8,11 @@ D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\InventoryManagement.Domain\bi
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\InventoryManagement.Domain\bin\Debug\net5.0\ref\InventoryManagement.Domain.dll
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\InventoryManagement.Domain\bin\Debug\net5.0\InventoryManagement.Domain.pdb
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\InventoryManagement.Domain\bin\Debug\net5.0\0_Framework.dll
-D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\InventoryManagement.Domain\bin\Debug\net5.0\InventoryManagement.Application.contract.dll
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\InventoryManagement.Domain\bin\Debug\net5.0\InventoryManagement.Application.Contract.dll
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\InventoryManagement.Domain\bin\Debug\net5.0\ShopManagement.Application.Contracts.dll
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\InventoryManagement.Domain\bin\Debug\net5.0\0_Framework.pdb
-D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\InventoryManagement.Domain\bin\Debug\net5.0\InventoryManagement.Application.contract.pdb
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\InventoryManagement.Domain\bin\Debug\net5.0\InventoryManagement.Application.Contract.pdb
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\InventoryManagement.Domain\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.csproj.CopyComplete
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.dll
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\InventoryManagement.Domain\obj\Debug\net5.0\ref\InventoryManagement.Domain.dll

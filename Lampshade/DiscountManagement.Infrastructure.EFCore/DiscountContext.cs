@@ -11,6 +11,7 @@ namespace DiscountManagement.Infrastructure.EFCore
         public DbSet<CustomerDiscount> CustomerDiscounts { get; set; }
         public DbSet<ColleagueDiscount> ColleagueDiscounts { get; set; }
 
+
         public DiscountContext(DbContextOptions<DiscountContext> options) : base(options)
         {
         }

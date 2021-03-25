@@ -13,8 +13,8 @@ namespace ShopManagement.Domain.ProductAgg
     {
         public string Name { get; private set; }
         public string Code { get; private set; }
-        public double UnitPrice { get; set; }
-        public bool IsInStock { get; set; }
+        //public double UnitPrice { get; set; }
+        //public bool IsInStock { get; set; }
         public string ShortDescription { get; private set; }
         public string Description { get; private set; }
         public string Picture { get; private set; }
@@ -33,11 +33,11 @@ namespace ShopManagement.Domain.ProductAgg
 
         public Product(string name, string code, string shortDescription, string description,
             string picture, string pictureAlt, string pictureTitle, long categoryId, string slug,
-            string keywords, string metaDescription, double unitPrice)
+            string keywords, string metaDescription)
         {
             Name = name;
             Code = code; 
-            UnitPrice = unitPrice;
+           // UnitPrice = unitPrice;
             ShortDescription = shortDescription;
             Description = description;
             Picture = picture;
@@ -47,16 +47,16 @@ namespace ShopManagement.Domain.ProductAgg
             Slug = slug;
             Keywords = keywords;
             MetaDescription = metaDescription;
-            IsInStock = true;
+           // IsInStock = true;
         }
 
         public void Edit(string name, string code, string shortDescription, string description,
             string picture, string pictureAlt, string pictureTitle, long categoryId, string slug,
-            string keywords, string metaDescription, double unitPrice)
+            string keywords, string metaDescription)
         {
             Name = name;
             Code = code;
-            UnitPrice = unitPrice;
+            //UnitPrice = unitPrice;
             ShortDescription = shortDescription;
             Description = description;
             Picture = picture;
@@ -68,14 +68,6 @@ namespace ShopManagement.Domain.ProductAgg
             MetaDescription = metaDescription;
         }
 
-        public void InStock()
-        {
-            this.IsInStock = true;
-        }
 
-        public void NotInStock()
-        {
-            this.IsInStock = false;
-        }
     }
 }

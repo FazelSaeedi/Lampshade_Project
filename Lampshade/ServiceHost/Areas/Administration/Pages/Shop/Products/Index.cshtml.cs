@@ -66,7 +66,7 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.Products
             return new JsonResult(result);
         }
 
-        public IActionResult OnGetIsInStock(long id)
+       /* public IActionResult OnGetIsInStock(long id)
         {
             var result = _productApplication.IsStock(id);
             if (result.IsSuccedded)
@@ -84,6 +84,6 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.Products
 
             Message = result.Message;
             return RedirectToPage("./Index");
-        }
+        }*/
     }
 }

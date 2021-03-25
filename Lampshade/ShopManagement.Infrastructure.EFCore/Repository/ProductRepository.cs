@@ -41,9 +41,9 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                 categoryId = x.CategoryId,
                 Code = x.Code ,
                 Picture = x.Picture ,
-                UnitPrice = x.UnitPrice ,
+                //UnitPrice = x.UnitPrice ,
                 CreationDate = x.CreateionDate.ToFarsi() ,
-                IsInstock = x.IsInStock
+                //IsInstock = x.IsInStock
             });
 
             if (!string.IsNullOrWhiteSpace(searchModel.Name))
@@ -75,7 +75,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                 PictureAlt = x.PictureAlt,
                 PictureTitle = x.PictureTitle ,
                 ShortDescription = x.ShortDescription ,
-                UnitPrice = x.UnitPrice
+                //UnitPrice = x.UnitPrice
             }).FirstOrDefault(x => x.Id == id);
         }
     }

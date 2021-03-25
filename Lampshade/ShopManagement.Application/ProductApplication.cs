@@ -27,7 +27,7 @@ namespace ShopManagement.Application
             var slug = command.Slug.Slugify();
             var product = new Product(command.Name, command.Code,command.ShortDescription,
                                       command.Description,command.Picture,command.PictureAlt,command.PictureTitle,
-                                      command.CategoryId,command.Slug,command.Keywords,command.MetaDescription,command.UnitPrice);
+                                      command.CategoryId,command.Slug,command.Keywords,command.MetaDescription);
             _productRepository.Create(product);
             _productRepository.SaveChanges();
             return operation.Succedded();
@@ -47,13 +47,13 @@ namespace ShopManagement.Application
             var slug = command.Slug.Slugify();
             product.Edit(command.Name, command.Code, command.ShortDescription,
                 command.Description, command.Picture, command.PictureAlt, command.PictureTitle,
-                command.CategoryId, command.Slug, command.Keywords, command.MetaDescription, command.UnitPrice);
+                command.CategoryId, command.Slug, command.Keywords, command.MetaDescription);
 
             _productRepository.SaveChanges();
             return operation.Succedded();
         }
 
-        public OperationResult IsStock(long id)
+/*        public OperationResult IsStock(long id)
         {
             var operation = new OperationResult();
             Product product = _productRepository.Get(id);
@@ -77,7 +77,7 @@ namespace ShopManagement.Application
             product.NotInStock();
             _productRepository.SaveChanges();
             return operation.Succedded();
-        }
+        }*/
 
         public EditProduct GetDetails(long id)
         {

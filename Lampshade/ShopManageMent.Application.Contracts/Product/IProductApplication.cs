@@ -13,9 +13,9 @@ namespace ShopManagement.Application.Contracts.Product
 
         OperationResult Edit(EditProduct command);
 
-        OperationResult IsStock(long id);
+        //OperationResult IsStock(long id);
 
-        OperationResult NotInStock(long id);
+        //OperationResult NotInStock(long id);
 
         EditProduct GetDetails(long id);
 

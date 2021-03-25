@@ -76,6 +76,21 @@ namespace DiscountManagement.Infrastructure.EFCore.Migrations
 
                     b.ToTable("CustomerDiscounts");
                 });
+
+            modelBuilder.Entity("DiscountManagement.Domain.Name.Name", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("FullName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Names");
+                });
 #pragma warning restore 612, 618
         }
     }
