@@ -217,3 +217,5 @@ D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ServiceHost\obj\Debug\net5.0\
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\ProductCategoryWithProduct\Default.cshtml.g.cs
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\LatestArrivals\Default.cshtml.g.cs
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\ProductCategory.cshtml.g.cs
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\Menu\Default.cshtml.g.cs
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\Footer\Default.cshtml.g.cs
