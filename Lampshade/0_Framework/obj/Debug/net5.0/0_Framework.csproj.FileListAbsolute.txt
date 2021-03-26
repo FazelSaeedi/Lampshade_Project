@@ -9,3 +9,4 @@ D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\0_Framework\obj\Debug\net5.0\
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\0_Framework\obj\Debug\net5.0\0_Framework.dll
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\0_Framework\obj\Debug\net5.0\ref\0_Framework.dll
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\0_Framework\obj\Debug\net5.0\0_Framework.pdb
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\0_Framework\obj\Debug\net5.0\0_Framework.csprojAssemblyReference.cache

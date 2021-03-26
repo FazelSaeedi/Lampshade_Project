@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "8Lf5hVBc/2oxUlBW391VIxD1I/h1oAquLPRmfsWIiC16YH3mxG5q67T1RZOK/XMfDZNTHpHsU0zO81iQGpgoKQ==",
+  "dgSpecHash": "9t+RLnz/yzx0zukCrtlerDBMkZKFj+Gdjv3y+WNmpKTqEiUvCwWYBgwOSCE3+vb8hjK871evvIrwlGX8rGg5Dw==",
   "success": true,
   "projectFilePath": "D:\\Projects\\ASPNetCore\\Lampshade_Project\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\STRIX\\.nuget\\packages\\microsoft.aspnetcore.http.features\\3.1.6\\microsoft.aspnetcore.http.features.3.1.6.nupkg.sha512",
     "C:\\Users\\STRIX\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.0-preview.2.21154.2\\microsoft.entityframeworkcore.6.0.0-preview.2.21154.2.nupkg.sha512",
     "C:\\Users\\STRIX\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.0-preview.2.21154.2\\microsoft.entityframeworkcore.abstractions.6.0.0-preview.2.21154.2.nupkg.sha512",
     "C:\\Users\\STRIX\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.0-preview.2.21154.2\\microsoft.entityframeworkcore.analyzers.6.0.0-preview.2.21154.2.nupkg.sha512",
@@ -18,6 +19,7 @@
     "C:\\Users\\STRIX\\.nuget\\packages\\system.collections.immutable\\6.0.0-preview.2.21154.6\\system.collections.immutable.6.0.0-preview.2.21154.6.nupkg.sha512",
     "C:\\Users\\STRIX\\.nuget\\packages\\system.componentmodel.annotations\\6.0.0-preview.2.21154.6\\system.componentmodel.annotations.6.0.0-preview.2.21154.6.nupkg.sha512",
     "C:\\Users\\STRIX\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0-preview.2.21154.6\\system.diagnostics.diagnosticsource.6.0.0-preview.2.21154.6.nupkg.sha512",
+    "C:\\Users\\STRIX\\.nuget\\packages\\system.io.pipelines\\4.7.1\\system.io.pipelines.4.7.1.nupkg.sha512",
     "C:\\Users\\STRIX\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0-preview.2.21154.6\\system.runtime.compilerservices.unsafe.6.0.0-preview.2.21154.6.nupkg.sha512"
   ],
   "logs": []
