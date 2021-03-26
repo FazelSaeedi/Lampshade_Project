@@ -19,3 +19,15 @@ D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\01_LampShadeQuery\bin\Debug\n
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\01_LampShadeQuery\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\01_LampShadeQuery\bin\Debug\net5.0\ShopManagement.Domain.pdb
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\01_LampShadeQuery\obj\Debug\net5.0\01_LampShadeQuery.csproj.CopyComplete
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\01_LampShadeQuery\bin\Debug\net5.0\DiscountManagement.Application.Contract.dll
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\01_LampShadeQuery\bin\Debug\net5.0\DiscountManagement.Domain.dll
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\01_LampShadeQuery\bin\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.dll
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\01_LampShadeQuery\bin\Debug\net5.0\InventoryManagement.Application.Contract.dll
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\01_LampShadeQuery\bin\Debug\net5.0\InventoryManagement.Domain.dll
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\01_LampShadeQuery\bin\Debug\net5.0\InventoryMangement.Infrastructure.EFCore.dll
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\01_LampShadeQuery\bin\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.pdb
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\01_LampShadeQuery\bin\Debug\net5.0\InventoryMangement.Infrastructure.EFCore.pdb
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\01_LampShadeQuery\bin\Debug\net5.0\DiscountManagement.Application.Contract.pdb
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\01_LampShadeQuery\bin\Debug\net5.0\DiscountManagement.Domain.pdb
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\01_LampShadeQuery\bin\Debug\net5.0\InventoryManagement.Application.Contract.pdb
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\01_LampShadeQuery\bin\Debug\net5.0\InventoryManagement.Domain.pdb

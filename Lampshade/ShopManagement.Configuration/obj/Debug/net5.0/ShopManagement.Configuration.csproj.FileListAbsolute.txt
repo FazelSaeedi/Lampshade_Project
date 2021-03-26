@@ -23,3 +23,15 @@ D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Configuration\
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Application.pdb
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\01_LampShadeQuery.dll
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\01_LampShadeQuery.pdb
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\DiscountManagement.Application.Contract.dll
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\DiscountManagement.Domain.dll
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.dll
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\InventoryManagement.Application.Contract.dll
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\InventoryManagement.Domain.dll
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\InventoryMangement.Infrastructure.EFCore.dll
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\DiscountManagement.Application.Contract.pdb
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\DiscountManagement.Domain.pdb
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.pdb
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\InventoryManagement.Application.Contract.pdb
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\InventoryManagement.Domain.pdb
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\InventoryMangement.Infrastructure.EFCore.pdb

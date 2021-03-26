@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using _01_LampShadeQuery.Contract.Product;
 
 namespace _01_LampShadeQuery.Contract.ProductCategory
 {
@@ -14,5 +16,9 @@ namespace _01_LampShadeQuery.Contract.ProductCategory
         public string PictureTitle { get; set; }
         public string Slug { get; set; }
 
+        public List<ProductQueryModel> Products { get; set; }
+        public string Description { get; set; }
+        public string MetaDescription { get; set; }
+        public string Keywords { get; set; }
     }
 }
