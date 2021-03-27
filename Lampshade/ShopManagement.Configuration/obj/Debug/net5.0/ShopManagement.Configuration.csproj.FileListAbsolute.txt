@@ -35,3 +35,9 @@ D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Configuration\
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\InventoryManagement.Application.Contract.pdb
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\InventoryManagement.Domain.pdb
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\InventoryMangement.Infrastructure.EFCore.pdb
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\BlogManagement.Application.Contracts.dll
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\BlogManagement.Domain.dll
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\BlogManagement.Infrastructure.EFCore.dll
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\BlogManagement.Application.Contracts.pdb
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\BlogManagement.Domain.pdb
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\BlogManagement.Infrastructure.EFCore.pdb
