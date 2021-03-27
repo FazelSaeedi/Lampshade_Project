@@ -9,6 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using _01_LampShadeQuery.Contract.Product;
+using ShopManagement.Domain.CommentAgg;
 
 namespace _01_LampshadeQuery.Query
 {
@@ -92,6 +93,7 @@ namespace _01_LampshadeQuery.Query
             var product = _context.Products
                 .Include(x => x.Category)
                 .Include(x => x.ProductPictures)
+                .Include(x => x.Comments)
                 .Select(product => new ProductQueryModel
                 {
                     Id = product.Id,
@@ -107,7 +109,8 @@ namespace _01_LampshadeQuery.Query
                     Keywords = product.Keywords ,
                     MetaDescription = product.MetaDescription ,
                     ShortDescription = product.ShortDescription ,
-                    Pictures = MapProductPictures(product.ProductPictures)
+                    Pictures = MapProductPictures(product.ProductPictures) ,
+                    Comments = MapComments(product.Comments)
                 }).FirstOrDefault(x => x.Slug == slug);
 
             if (product == null)
@@ -137,6 +140,19 @@ namespace _01_LampshadeQuery.Query
             
 
             return product;
+        }
+
+        private static List<CommentQueryModel> MapComments(List<Comment> comments)
+        {
+            return comments
+                // .Where(x => !x.IsCanceled)
+                .Where(x => x.IsConfirmed)
+                .Select(x => new CommentQueryModel
+            {
+                Id = x.Id ,
+                Message = x.Message ,
+                Name = x.Name
+            }).OrderByDescending(x => x.Id).ToList();
         }
 
         private static List<ProductPictureQueryModel> MapProductPictures(List<ProductPicture> pictures)
