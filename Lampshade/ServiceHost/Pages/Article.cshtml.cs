@@ -5,7 +5,8 @@ using _01_LampshadeQuery.Contracts.ArticleCategory;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Collections.Generic;
-using ShopManagement.Application.Contracts.Comment;
+using CommentManagement.Application.Contracts.Comment;
+using CommnetManagement.Infrastructure.EFCore;
 
 namespace ServiceHost.Pages
 {
@@ -34,7 +35,7 @@ namespace ServiceHost.Pages
 
         public IActionResult OnPost(AddComment command, string articleSlug)
         {
-            //command.Type = CommentType.Article;
+            command.Type = CommentType.Article;
             var result = _commentApplication.Add(command);
             return RedirectToPage("/Article", new { Id = articleSlug });
         }

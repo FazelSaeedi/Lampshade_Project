@@ -26,3 +26,13 @@ D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\DiscountManagement.Infrastruc
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\DiscountManagement.Infrastructure.EFCore\obj\Debug\net5.0\ref\DiscountManagement.Infrastructure.EFCore.dll
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\DiscountManagement.Infrastructure.EFCore\obj\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.pdb
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\DiscountManagement.Infrastructure.EFCore\obj\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.genruntimeconfig.cache
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\DiscountManagement.Infrastructure.EFCore\bin\Debug\net5.0\BlogManagement.Application.Contracts.dll
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\DiscountManagement.Infrastructure.EFCore\bin\Debug\net5.0\BlogManagement.Domain.dll
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\DiscountManagement.Infrastructure.EFCore\bin\Debug\net5.0\CommentManagement.Application.Contracts.dll
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\DiscountManagement.Infrastructure.EFCore\bin\Debug\net5.0\CommentManagement.Domain.dll
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\DiscountManagement.Infrastructure.EFCore\bin\Debug\net5.0\CommnetManagement.Infrastructure.EFCore.dll
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\DiscountManagement.Infrastructure.EFCore\bin\Debug\net5.0\BlogManagement.Application.Contracts.pdb
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\DiscountManagement.Infrastructure.EFCore\bin\Debug\net5.0\BlogManagement.Domain.pdb
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\DiscountManagement.Infrastructure.EFCore\bin\Debug\net5.0\CommentManagement.Application.Contracts.pdb
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\DiscountManagement.Infrastructure.EFCore\bin\Debug\net5.0\CommentManagement.Domain.pdb
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\DiscountManagement.Infrastructure.EFCore\bin\Debug\net5.0\CommnetManagement.Infrastructure.EFCore.pdb

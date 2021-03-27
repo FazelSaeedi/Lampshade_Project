@@ -237,100 +237,95 @@
                                                  aria-labelledby="review-tab">
                                                 <div class="product-rating-wrap">
                                                     @*<div class="rating-list">
-                                                            <div class="sin-list float-right">
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <span>(5)</span>
-                                                            </div>
-                                                            <div class="sin-list float-right">
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star-o"></i>
-                                                                <span>(3)</span>
-                                                            </div>
-                                                            <div class="sin-list float-right">
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star-o"></i>
-                                                                <i class="fa fa-star-o"></i>
-                                                                <span>(1)</span>
-                                                            </div>
-                                                            <div class="sin-list float-right">
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star-o"></i>
-                                                                <i class="fa fa-star-o"></i>
-                                                                <i class="fa fa-star-o"></i>
-                                                                <span>(0)</span>
-                                                            </div>
-                                                            <div class="sin-list float-right">
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star-o"></i>
-                                                                <i class="fa fa-star-o"></i>
-                                                                <i class="fa fa-star-o"></i>
-                                                                <i class="fa fa-star-o"></i>
-                                                                <span>(0)</span>
-                                                            </div>
-                                                        </div>*@
+            <div class="sin-list float-right">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <span>(5)</span>
+            </div>
+            <div class="sin-list float-right">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <span>(3)</span>
+            </div>
+            <div class="sin-list float-right">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <span>(1)</span>
+            </div>
+            <div class="sin-list float-right">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <span>(0)</span>
+            </div>
+            <div class="sin-list float-right">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <span>(0)</span>
+            </div>
+        </div>*@
                                                     @foreach (var comment in Model.Product.Comments)
                                                     {
-                                                        <div class="ratings-wrapper">
-                                                            <div class="sin-ratings">
-                                                                <div class="rating-author">
-                                                                    <h3>@comment.Name</h3>
-                                                                    @*<div class="rating-star">
-                                                                            <i class="fa fa-star"></i>
-                                                                            <i class="fa fa-star"></i>
-                                                                            <i class="fa fa-star"></i>
-                                                                            <i class="fa fa-star"></i>
-                                                                            <i class="fa fa-star"></i>
-                                                                            <span>(5)</span>
-                                                                        </div>*@
-                                                                </div>
-                                                                <p>@comment.Message</p>
-                                                            </div>
+                                                <div class="ratings-wrapper">
+                                                    <div class="sin-ratings">
+                                                        <div class="rating-author">
+                                                            <h3>@comment.Name</h3>
+                                                            @*<div class="rating-star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <span>(5)</span>
+                </div>*@
                                                         </div>
-                                                    }
+                                                        <p>@comment.Message</p>
+                                                    </div>
+                                                </div>}
+                                                    <div class="rating-form-wrapper fix">
+                                                        <h3>نظر خود را به ما بگویید</h3>
+                                                        <form method="post">
+                                                            <div class="rating-form row">
+                                                                <div class="col-md-6 col-12 form-group">
+                                                                    <label for="name">نام:</label>
+                                                                    <input id="name" placeholder="مثال: علی علوی" name="name" type="text">
+                                                                </div>
+                                                                <div class="col-md-6 col-12 form-group">
+                                                                    <label for="email">ایمیل:</label>
+                                                                    <input id="email" placeholder="مثال: contact@atriya.com" name="email" type="text">
+                                                                </div>
+                                                                <div class="col-12 form-group">
+                                                                    <label for="your-review">نظر شما:</label>
+                                                                    <textarea name="message" id="message" placeholder="نظر خود را بنویسید ..."></textarea>
+                                                                </div>
+                                                                <input type="hidden" name="ownerRecordId" value="@Model.Product.Id" />
+                                                                @*<input type="hidden" name="type" value="@CommnetManagement.Infrastructure.EFCore.CommentType.Product" />*@
+                                                                <input type="hidden" name="productSlug" value="@Model.Product.Slug" />
+                                                                <div class="col-12">
+                                                                    <input value="ارسال" type="submit">
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <div class="rating-form-wrapper fix">
-                                            <br/>
-                                            <br/>
-                                            <br/>
-                                            <br/>
-                                            <br/>
-                                            <h3>نظر خود را به ما بگویید</h3>
-                                            <form method="post">
-                                                <div class="rating-form row">
-                                                    <div class="col-md-6 col-12 form-group">
-                                                        <label for="name">نام:</label>
-                                                        <input id="name" placeholder="مثال: علی علوی" name="name" type="text">
-                                                    </div>
-                                                    <div class="col-md-6 col-12 form-group">
-                                                        <label for="email">ایمیل:</label>
-                                                        <input id="email" placeholder="مثال: contact@atriya.com" name="email" type="text">
-                                                    </div>
-                                                    <div class="col-12 form-group">
-                                                        <label for="your-review">نظر شما:</label>
-                                                        <textarea name="message" id="message" placeholder="نظر خود را بنویسید ..."></textarea>
-                                                    </div>
-                                                    <input type="hidden" name="ProductId" value="@Model.Product.Id"/>
-                                                    @*<input type="hidden" name="type" value="@CommnetManagement.Infrastructure.EFCore.CommentType.Product" />*@
-                                                    <input type="hidden" name="productSlug" value="@Model.Product.Slug"/>
-                                                    <div class="col-12">
-                                                        <input value="ارسال" type="submit">
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
+                                    
                                     </div>
                                 </div>
                             </div>

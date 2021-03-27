@@ -1,26 +1,24 @@
 ﻿using _0_Framework.Application;
 using _01_LampshadeQuery.Contracts.Article;
-//using _01_LampshadeQuery.Contracts.Comment;
 using BlogManagement.Infrastructure.EFCore;
-//using CommnetManagement.Infrastructure.EFCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using _01_LampShadeQuery.Contract.Product;
+using _01_LampShadeQuery.Contract.Comment;
+using CommnetManagement.Infrastructure.EFCore;
 
 namespace _01_LampshadeQuery.Query
 {
     public class ArticleQuery : IArticleQuery
     {
         private readonly BlogContext _context;
-        //private readonly CommentContext _commentContext;
+        private readonly CommentContext _commentContext;
 
-        public ArticleQuery(BlogContext context)
+        public ArticleQuery(BlogContext context, CommentContext commentContext)
         {
             _context = context;
-           // _commentContext = commentContext;
+            _commentContext = commentContext;
         }
 
         public ArticleQueryModel GetArticleDetails(string slug)
@@ -30,9 +28,10 @@ namespace _01_LampshadeQuery.Query
                 .Where(x => x.PublishDate <= DateTime.Now)
                 .Select(x => new ArticleQueryModel
                 {
+                    Id = x.Id,
                     Title = x.Title,
-                    CategoryName = x.Category.Name ,
-                    CategorySlug = x.Category.Slug ,
+                    CategoryName = x.Category.Name,
+                    CategorySlug = x.Category.Slug,
                     Slug = x.Slug,
                     CanonicalAddress = x.CanonicalAddress,
                     Description = x.Description,
@@ -43,11 +42,34 @@ namespace _01_LampshadeQuery.Query
                     PictureTitle = x.PictureTitle,
                     PublishDate = x.PublishDate.ToFarsi(),
                     ShortDescription = x.ShortDescription,
-                    
-                    
                 }).FirstOrDefault(x => x.Slug == slug);
 
-            article.KeywordList = article.Keywords.Split(",").ToList();
+            if (!string.IsNullOrWhiteSpace(article.Keywords))
+                article.KeywordList = article.Keywords.Split(",").ToList();
+
+
+            var comments = _commentContext.Comments
+                //.Where(x => !x.IsCanceled)
+                .Where(x => x.IsConfirmed)
+                .Where(x => x.Type == CommentType.Article)
+                .Where(x => x.OwnerRecordId == article.Id)
+                .Select(x => new CommentQueryModel
+                {
+                    Id = x.Id,
+                    Message = x.Message,
+                    Name = x.Name,
+                    ParentId = x.ParentId,
+                    CreationDate = x.CreateionDate.ToFarsi()
+                }).OrderByDescending(x => x.Id).ToList();
+
+            foreach (var comment in comments)
+            {
+                if (comment.ParentId > 0)
+                    comment.ParentName = comments.FirstOrDefault(x => x.Id == comment.ParentId)?.Name;
+            }
+
+            article.Comments = comments;
+
             return article;
         }
 

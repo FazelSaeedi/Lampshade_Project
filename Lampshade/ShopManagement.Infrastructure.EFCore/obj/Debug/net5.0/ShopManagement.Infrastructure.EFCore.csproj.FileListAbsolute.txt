@@ -20,3 +20,13 @@ D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Infrastructure
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\0_Framework.pdb
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\ShopManageMent.Application.Contracts.pdb
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Infrastructure.EFCore\obj\Debug\net5.0\ShopManagement.Infrastructure.EFCore.csproj.CopyComplete
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\BlogManagement.Application.Contracts.dll
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\BlogManagement.Domain.dll
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\CommentManagement.Application.Contracts.dll
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\CommentManagement.Domain.dll
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\CommnetManagement.Infrastructure.EFCore.dll
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\CommentManagement.Domain.pdb
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\CommnetManagement.Infrastructure.EFCore.pdb
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\BlogManagement.Application.Contracts.pdb
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\BlogManagement.Domain.pdb
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\CommentManagement.Application.Contracts.pdb

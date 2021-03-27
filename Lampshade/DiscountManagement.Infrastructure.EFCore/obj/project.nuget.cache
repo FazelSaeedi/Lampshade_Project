@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "mv8nbrXcQ9cQT1tH0lWzaoI8C5dVe0SsH33v8Usfv7c6wEyAUU2/YyssmP82Jps/sCbUpnzjkSuFo1Unps9nzw==",
+  "dgSpecHash": "ZhdNrSENUhr756NZc56v3+ygCMii8hGOxskQRPSjplkLbiDUM/5yC4YC/52LB2eIGgEmKO1xbCyXHA6FFdRnUw==",
   "success": true,
   "projectFilePath": "D:\\Projects\\ASPNetCore\\Lampshade_Project\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj",
   "expectedPackageFiles": [

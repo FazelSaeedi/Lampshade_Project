@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ucUMYbq970HDCBL+GvDdl7FPBQe3ppji/dKVkcgi347sl3TFroZYFmExTpUza0XMkvNVyXe+BGyS/bmOSxUDVA==",
+  "dgSpecHash": "xB9LGjTxykLNrlE50U4zU3ckWWpn2isf7MkV9JmxyJPQ3UOxmmuTzwwtwvv7M2uEiKbsu01D9uOX5b9VEnKPWw==",
   "success": true,
   "projectFilePath": "D:\\Projects\\ASPNetCore\\Lampshade_Project\\Lampshade\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj",
   "expectedPackageFiles": [
