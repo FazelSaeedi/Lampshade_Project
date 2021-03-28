@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -6,6 +7,7 @@ using Microsoft.Extensions.Hosting;
 using System.Text.Encodings.Web;
 using System.Text.Unicode;
 using _0_Framework.Application;
+using _0_Framework.Infrastructure;
 using AccountManagement.Configuration;
 using BlogManagement.Infrastructure.Configuration;
 using CommentManagement.Infrastructure.Configuration;
@@ -33,17 +35,17 @@ namespace ServiceHost
 
 
             var connectionString = Configuration.GetConnectionString("LampShadeDb");
-            ShopManagementBoostrapper.Configure(services , connectionString);
-            DiscountManagementBootstrapper.Configure(services , connectionString);
+            ShopManagementBoostrapper.Configure(services, connectionString);
+            DiscountManagementBootstrapper.Configure(services, connectionString);
             InventoryManagementBootstrapper.Configure(services, connectionString);
-            BlogManagementBootstrapper.Configure(services , connectionString);
-            CommentManagementBootstrapper.Configure(services , connectionString);
-            AccountManagementBootstrapper.Configure(services , connectionString);
+            BlogManagementBootstrapper.Configure(services, connectionString);
+            CommentManagementBootstrapper.Configure(services, connectionString);
+            AccountManagementBootstrapper.Configure(services, connectionString);
 
 
 
-            services.AddSingleton(HtmlEncoder.Create(UnicodeRanges.BasicLatin , UnicodeRanges.Arabic));
-            services.AddSingleton<IPasswordHasher , PasswordHasher>();
+            services.AddSingleton(HtmlEncoder.Create(UnicodeRanges.BasicLatin, UnicodeRanges.Arabic));
+            services.AddSingleton<IPasswordHasher, PasswordHasher>();
             services.AddTransient<IFileUploader, FileUploader>();
             services.AddTransient<IAuthHelper, AuthHelper>();
 
@@ -64,6 +66,42 @@ namespace ServiceHost
                     o.LogoutPath = new PathString("/Account");
                     o.AccessDeniedPath = new PathString("/AccessDenied");
                 });
+
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("AdminArea",
+                    builder => builder.RequireRole(new List<string> {Roles.Administrator, Roles.ContentUploader }));
+
+                options.AddPolicy("Shop",
+                    builder => builder.RequireRole(new List<string> { Roles.Administrator }));
+
+                options.AddPolicy("Discount",
+                    builder => builder.RequireRole(new List<string> { Roles.Administrator }));
+
+                options.AddPolicy("Account",
+                    builder => builder.RequireRole(new List<string> { Roles.Administrator }));
+
+                options.AddPolicy("Inventory",
+                    builder => builder.RequireRole(new List<string> { Roles.Administrator }));
+
+            });
+
+            services.AddRazorPages()
+                .AddRazorPagesOptions(option =>
+                {
+
+                    option.Conventions.AuthorizeAreaFolder("Administration", "/", "AdminArea");
+
+                    option.Conventions.AuthorizeAreaFolder("Administration", "/Shop", "Shop");
+
+                    option.Conventions.AuthorizeAreaFolder("Administration", "/Discounts", "Discount");
+
+                    option.Conventions.AuthorizeAreaFolder("Administration", "/Accounts", "Account");
+
+                    option.Conventions.AuthorizeAreaFolder("Administration", "/Inventory", "Inventory");
+
+                });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
