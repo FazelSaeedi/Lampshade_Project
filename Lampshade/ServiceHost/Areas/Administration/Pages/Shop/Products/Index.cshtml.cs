@@ -3,11 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using _0_Framework.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using ShopManagement.Application.Contracts.Product;
 using ShopManagement.Application.Contracts.ProductCategory;
+using ShopManagement.Configuration.Permissions;
 
 namespace ServiceHost.Areas.Administration.Pages.Shop.Products
 {
@@ -29,13 +31,14 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.Products
             _productCategoryApplication = productCategoryApplication;
         }
 
-
+        [NeedsPermission(ShopPermissions.ListProducts)]
         public void OnGet(ProductSearchModel SearchModel)
         {
             ProductCategories = new SelectList(_productCategoryApplication.GetProductCategories() , "Id" , "Name");
             Products = _productApplication.Search(SearchModel);
         }
 
+        [NeedsPermission(ShopPermissions.CreateProduct)]
         public IActionResult OnGetCreate()
         {
             var command = new CreateProduct();
@@ -43,12 +46,14 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.Products
             return Partial("./Create", command);
         }
 
+        [NeedsPermission(ShopPermissions.CreateProduct)]
         public JsonResult OnPostCreate(CreateProduct command)
         {
             var result = _productApplication.Create(command);
             return new JsonResult(result);
         }
 
+        [NeedsPermission(ShopPermissions.EditProduct)]
         public IActionResult OnGetEdit(long id)
         {
             var Product = _productApplication.GetDetails(id);
@@ -56,6 +61,7 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.Products
             return Partial("Edit", Product);
         }
 
+        [NeedsPermission(ShopPermissions.EditProduct)]
         public JsonResult OnPostEdit(EditProduct command)
         {
             if (ModelState.IsValid)
@@ -66,24 +72,5 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.Products
             return new JsonResult(result);
         }
 
-       /* public IActionResult OnGetIsInStock(long id)
-        {
-            var result = _productApplication.IsStock(id);
-            if (result.IsSuccedded)
-                return RedirectToPage("./Index");
-
-            Message = result.Message;
-            return RedirectToPage("./Index");
-        }
-
-        public IActionResult OnGetNotInStock(long id)
-        {
-            var result = _productApplication.NotInStock(id);
-            if (result.IsSuccedded)
-                return RedirectToPage("./Index");
-
-            Message = result.Message;
-            return RedirectToPage("./Index");
-        }*/
     }
 }

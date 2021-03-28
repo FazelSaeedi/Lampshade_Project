@@ -1,7 +1,9 @@
 ﻿using _0_Framework.Application;
 using AccountManagement.Application.Contracts.Account;
 using System.Collections.Generic;
+using System.Linq;
 using AccountManagement.Domain.AccountAgg;
+using AccountManagement.Domain.RoleAgg;
 
 
 namespace AccountManagement.Application
@@ -12,15 +14,16 @@ namespace AccountManagement.Application
          private readonly IPasswordHasher _passwordHasher;
          private readonly IAccountRepository _accountRepository;
          private readonly IAuthHelper _authHelper;
+         private readonly IRoleRepository _roleRepository;
 
-public AccountApplication(IAccountRepository accountRepository, IFileUploader fileUploader, IPasswordHasher passwordHasher, IAuthHelper authHelper)
+public AccountApplication(IAccountRepository accountRepository, IFileUploader fileUploader, IPasswordHasher passwordHasher, IAuthHelper authHelper, IRoleRepository roleRepository)
          {
              _accountRepository = accountRepository;
              _fileUploader = fileUploader;
              _passwordHasher = passwordHasher;
              _authHelper = authHelper;
+             _roleRepository = roleRepository;
          }
-        // private readonly IRoleRepository _roleRepository;
 
         public AccountViewModel GetAccountBy(long id)
         {
@@ -89,13 +92,13 @@ public AccountApplication(IAccountRepository accountRepository, IFileUploader fi
             if (!result.Verified)
                 return operation.Failed(ApplicationMessages.WrongUserPass);
 
-            /*var permissions = _roleRepository.Get(account.RoleId)
+            var permissions = _roleRepository.Get(account.RoleId)
                 .Permissions
                 .Select(x => x.Code)
-                .ToList();*/
+                .ToList();
 
             var authViewModel = new AuthViewModel(account.Id, account.RoleId, account.Fullname
-                , account.Username, account.Mobile, new List<int>());
+                , account.Username, account.Mobile, permissions);
 
             _authHelper.Signin(authViewModel);
 

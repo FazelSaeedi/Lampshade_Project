@@ -87,6 +87,7 @@ namespace ServiceHost
             });
 
             services.AddRazorPages()
+                .AddMvcOptions(option => option.Filters.Add<SecurityPageFilter>())
                 .AddRazorPagesOptions(option =>
                 {
 
