@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "wFUU4joA14zheXkNvDMsdkSMvwvUp9ebJHNhF8V0x2Jk2jGn4e9cIHR1qbAwTFH4TBb6FKQTsfEYPMUkxpoIWA==",
+  "dgSpecHash": "eOxJ9Y6Yfb9lCpYYa5EcXKLrGW+Ja5CId+COIIEKbLFxgxfF1ZrOvYVxQc5WCC1e5RCLyvAKa4Nm16mGnzVQUA==",
   "success": true,
   "projectFilePath": "D:\\Projects\\ASPNetCore\\Lampshade_Project\\Lampshade\\ServiceHost\\ServiceHost.csproj",
   "expectedPackageFiles": [
@@ -78,6 +78,7 @@
     "C:\\Users\\STRIX\\.nuget\\packages\\nancy\\2.0.0\\nancy.2.0.0.nupkg.sha512",
     "C:\\Users\\STRIX\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\STRIX\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\STRIX\\.nuget\\packages\\restsharp\\106.11.7\\restsharp.106.11.7.nupkg.sha512",
     "C:\\Users\\STRIX\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\STRIX\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\STRIX\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",

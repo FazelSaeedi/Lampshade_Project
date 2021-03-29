@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "liQq80292yb4x5uMxY3Xjib4+L2Su2UL6G4ju7XhJ2+UF5yKXLjN/CFxn70u6EVJUmMDV45JELjuyD3PNwGHcQ==",
+  "dgSpecHash": "Uq5+ZCAR93mbRRJTeJvcFUWWUiKRn9rBw1lF+Eu3ekvBFGo2cIhFN/qJ9GqbjoZNkNLKMgY6oyjRVd9brux+Rg==",
   "success": true,
   "projectFilePath": "D:\\Projects\\ASPNetCore\\Lampshade_Project\\Lampshade\\DiscountManagement.Application\\DiscountManagement.Application.csproj",
   "expectedPackageFiles": [
@@ -38,6 +38,7 @@
     "C:\\Users\\STRIX\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "C:\\Users\\STRIX\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Users\\STRIX\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\STRIX\\.nuget\\packages\\restsharp\\106.11.7\\restsharp.106.11.7.nupkg.sha512",
     "C:\\Users\\STRIX\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\STRIX\\.nuget\\packages\\system.collections.immutable\\6.0.0-preview.2.21154.6\\system.collections.immutable.6.0.0-preview.2.21154.6.nupkg.sha512",
     "C:\\Users\\STRIX\\.nuget\\packages\\system.componentmodel.annotations\\6.0.0-preview.2.21154.6\\system.componentmodel.annotations.6.0.0-preview.2.21154.6.nupkg.sha512",

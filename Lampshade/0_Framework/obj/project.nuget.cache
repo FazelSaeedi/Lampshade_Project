@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "yHJg87gC1kWkJkZSnERtit8mY0FaCNTaLxKmU4kwFBay6Lwl+VNSA6G5j7/85QU2X+/nAIEtFefCQWvZzA4oyg==",
+  "dgSpecHash": "2wtJe//ekslLRGR6iiH/XJCD9WyJB19KXQo6QUjrFTM5My3e5Dwxdri3IUZnLxJeDjZlnWl4jrnxlWoRS1QmAg==",
   "success": true,
   "projectFilePath": "D:\\Projects\\ASPNetCore\\Lampshade_Project\\Lampshade\\0_Framework\\0_Framework.csproj",
   "expectedPackageFiles": [
@@ -38,6 +38,7 @@
     "C:\\Users\\STRIX\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "C:\\Users\\STRIX\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Users\\STRIX\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\STRIX\\.nuget\\packages\\restsharp\\106.11.7\\restsharp.106.11.7.nupkg.sha512",
     "C:\\Users\\STRIX\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\STRIX\\.nuget\\packages\\system.collections.immutable\\6.0.0-preview.2.21154.6\\system.collections.immutable.6.0.0-preview.2.21154.6.nupkg.sha512",
     "C:\\Users\\STRIX\\.nuget\\packages\\system.componentmodel.annotations\\6.0.0-preview.2.21154.6\\system.componentmodel.annotations.6.0.0-preview.2.21154.6.nupkg.sha512",

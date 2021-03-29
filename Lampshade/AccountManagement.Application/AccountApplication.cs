@@ -16,7 +16,7 @@ namespace AccountManagement.Application
          private readonly IAuthHelper _authHelper;
          private readonly IRoleRepository _roleRepository;
 
-public AccountApplication(IAccountRepository accountRepository, IFileUploader fileUploader, IPasswordHasher passwordHasher, IAuthHelper authHelper, IRoleRepository roleRepository)
+        public AccountApplication(IAccountRepository accountRepository, IFileUploader fileUploader, IPasswordHasher passwordHasher, IAuthHelper authHelper, IRoleRepository roleRepository)
          {
              _accountRepository = accountRepository;
              _fileUploader = fileUploader;
@@ -122,7 +122,7 @@ public AccountApplication(IAccountRepository accountRepository, IFileUploader fi
 
         public List<AccountViewModel> GetAccounts()
         {
-            throw new System.NotImplementedException();
+            return _accountRepository.GetAccounts();
         }
     }
 }

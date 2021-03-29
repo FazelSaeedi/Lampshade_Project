@@ -1,7 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using _0_Framework.Application;
+using _0_Framework.Application.ZarinPal;
 //using _0_Framework.Application.ZarinPal;
 using _01_LampshadeQuery.Contracts;
 using _01_LampshadeQuery.Contracts.Product;
@@ -22,18 +24,18 @@ namespace ServiceHost.Pages
         private readonly ICartService _cartService;
         private readonly IProductQuery _productQuery;
         //private readonly IZarinPalFactory _zarinPalFactory;
-        //private readonly IOrderApplication _orderApplication;
+        private readonly IOrderApplication _orderApplication;
         private readonly ICartCalculatorService _cartCalculatorService;
 
         public CheckoutModel(ICartCalculatorService cartCalculatorService, ICartService cartService,
-            IProductQuery productQuery/*, IOrderApplication orderApplication*//*, IZarinPalFactory zarinPalFactory*/,
+            IProductQuery productQuery , IOrderApplication orderApplication /*, IZarinPalFactory zarinPalFactory*/,
             IAuthHelper authHelper)
         {
             Cart = new Cart();
             _cartCalculatorService = cartCalculatorService;
             _cartService = cartService;
             _productQuery = productQuery;
-            //_orderApplication = orderApplication;
+            _orderApplication = orderApplication;
             //_zarinPalFactory = zarinPalFactory;
             _authHelper = authHelper;
         }
@@ -50,7 +52,7 @@ namespace ServiceHost.Pages
             _cartService.Set(Cart);
         }
 
-        /*public IActionResult OnPostPay(int paymentMethod)
+        public IActionResult OnPostPay(int paymentMethod)
         {
             var cart = _cartService.Get();
             cart.SetPaymentMethod(paymentMethod);
@@ -59,24 +61,45 @@ namespace ServiceHost.Pages
             if (result.Any(x => !x.IsInStock))
                 return RedirectToPage("/Cart");
 
+            var paymentResult = new PaymentResult();
             var orderId = _orderApplication.PlaceOrder(cart);
+
             if (paymentMethod == 1)
             {
-                var paymentResponse = _zarinPalFactory.CreatePaymentRequest(
-                    cart.PayAmount.ToString(CultureInfo.InvariantCulture), "", "",
-                    "خرید از درگاه لوازم خانگی و دکوری", orderId);
-
-                return Redirect(
-                    $"https://{_zarinPalFactory.Prefix}.zarinpal.com/pg/StartPay/{paymentResponse.Authority}");
+                _orderApplication.PaymentSucceeded(orderId, 23231);
+                return RedirectToPage("/PaymentResult",
+                    paymentResult.Succeeded(
+                        "سفارش شما با موفقیت ثبت شد. در اسرا وقت برای شما ارسال میشود.", null));
+            }
+            else
+            {
+                _orderApplication.PaymentSucceeded(orderId, 23231);
+                return RedirectToPage("/PaymentResult",
+                    paymentResult.Succeeded(
+                        "سفارش شما با موفقیت ثبت شد. پس از تماس کارشناسان ما و پرداخت وجه، سفارش ارسال خواهد شد.", null));
             }
 
-            var paymentResult = new PaymentResult();
-            return RedirectToPage("/PaymentResult",
-                paymentResult.Succeeded(
-                    "سفارش شما با موفقیت ثبت شد. پس از تماس کارشناسان ما و پرداخت وجه، سفارش ارسال خواهد شد.", null));
+
+
+
+            /*   var orderId = _orderApplication.PlaceOrder(cart);
+               if (paymentMethod == 1)
+               {
+                   var paymentResponse = _zarinPalFactory.CreatePaymentRequest(
+                       cart.PayAmount.ToString(CultureInfo.InvariantCulture), "", "",
+                       "خرید از درگاه ", orderId);
+   
+                   return Redirect(
+                       $"https://{_zarinPalFactory.Prefix}.zarinpal.com/pg/StartPay/{paymentResponse.Authority}");
+               }
+   
+               var paymentResult = new PaymentResult();
+               return RedirectToPage("/PaymentResult",
+                   paymentResult.Succeeded(
+                       "سفارش شما با موفقیت ثبت شد. پس از تماس کارشناسان ما و پرداخت وجه، سفارش ارسال خواهد شد.", null));*/
         }
 
-        public IActionResult OnGetCallBack([FromQuery] string authority, [FromQuery] string status,
+     /*   public IActionResult OnGetCallBack([FromQuery] string authority, [FromQuery] string status,
             [FromQuery] long oId)
         {
             var orderAmount = _orderApplication.GetAmountBy(oId);

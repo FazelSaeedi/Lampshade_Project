@@ -14,12 +14,15 @@ using ShopManagement.Application.Contracts.ProductCategory;
 using ShopManagement.Application.Contracts.ProductPicture;
 using ShopManagement.Application.Contracts.Slide;
 using ShopManagement.Configuration.Permissions;
+using ShopManagement.Domain.OrderAgg;
 using ShopManagement.Domain.ProductAgg;
 using ShopManagement.Domain.ProductCategoryAgg;
 using ShopManagement.Domain.ProductPictureAgg;
+using ShopManagement.Domain.Services;
 using ShopManagement.Domain.SlideAgg;
 using ShopManagement.Infrastructure.EFCore;
 using ShopManagement.Infrastructure.EFCore.Repository;
+using ShopManagement.Infrastructure.InventoryAcl;
 
 
 namespace ShopManagement.Configuration
@@ -43,14 +46,18 @@ namespace ShopManagement.Configuration
             services.AddTransient<ISlideRepository, SlideRepository>();
 
 
+            services.AddTransient<IOrderRepository , OrderRepository>();
+            services.AddTransient<IOrderApplication , OrderApplication>();
+
             services.AddTransient<ISlideQuery, SlideQuery>();
             services.AddTransient<IProductCategoryQuery, ProductCategoryQuery>();
             services.AddTransient<IProductQuery, ProductQuery>();
-
             services.AddTransient<IPermissionExposer, ShopPermissionExposer>();
 
 
             services.AddSingleton<ICartService, CartService>();
+
+            services.AddTransient<IShopInventoryAcl, ShopInventoryAcl>();
             services.AddTransient<ICartCalculatorService, CartCalculatorService>();
 
 

@@ -276,3 +276,9 @@ D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ServiceHost\bin\Debug\net5.0\
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ServiceHost\bin\Debug\net5.0\Nancy.dll
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Cart.cshtml.g.cs
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Checkout.cshtml.g.cs
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ServiceHost\bin\Debug\net5.0\RestSharp.dll
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\PaymentResult.cshtml.g.cs
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ServiceHost\bin\Debug\net5.0\ShopManagement.Infrastructure.InventoryAcl.dll
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ServiceHost\bin\Debug\net5.0\ShopManagement.Infrastructure.InventoryAcl.pdb
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\Orders\Index.cshtml.g.cs
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\Orders\Items.cshtml.g.cs

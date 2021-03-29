@@ -37,3 +37,9 @@ D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\InventoryManagement.Infrastru
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\CommentManagement.Application.Contracts.pdb
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\CommentManagement.Domain.pdb
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\CommnetManagement.Infrastructure.EFCore.pdb
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\AccountManagement.Application.Contracts.dll
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\AccountManagement.Domain.dll
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\AccountMangement.Infrastructure.EFCore.dll
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\AccountManagement.Application.Contracts.pdb
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\AccountManagement.Domain.pdb
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\AccountMangement.Infrastructure.EFCore.pdb
