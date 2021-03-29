@@ -59,11 +59,20 @@
     </div>
     <!-- end of scroll to top -->
     <!-- Vendor JS -->
-    <script src="~/Theme/assets/js/vendors.js"></script>
+<script src="~/Theme/assets/js/vendors.js"></script>
+<script src="~/Theme/assets/js/active.js"></script>
 
-    <!-- Active JS -->
-    <script src="~/Theme/assets/js/active.js"></script>
+<!-- Active JS -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/Theme/assets/js/custom.js"></script>
+    <script src="~/Theme/assets/js/plugins.js"></script>
+    
 
+    <script>
+        $(document).ready(function () {
+            updateCart();
+        });
+    </script>
 </body>
 
 </html>

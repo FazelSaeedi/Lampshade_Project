@@ -1,6 +1,7 @@
 ﻿const cookieName = "cart-items";
 
 function addToCart(id, name, price, picture) {
+    
     let products = $.cookie(cookieName);
     if (products === undefined) {
         products = [];

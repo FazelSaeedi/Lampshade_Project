@@ -1,81 +1,58 @@
 ﻿@model _01_LampshadeQuery.MenuModel
 @inject _0_Framework.Application.IAuthHelper AuthHelper
 
-@{
-}
-
-
-<!--====================  header area ====================-->
 <div class="header-area header-sticky">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <!--=======  header wrapper  =======-->
                 <div class="header-wrapper d-none d-lg-flex">
-                    <!-- logo -->
                     <div class="logo">
-                        <a href="index.html">
-                            <img src="assets/img/logo.png" class="img-fluid" alt="">
+                        <a asp-page="/Index">
+                            <img src="~/Theme/assets/img/logo.png" class="img-fluid" alt="">
                         </a>
                     </div>
-                    <!-- menu wrapper -->
                     <div class="navigation-menu-wrapper">
                         <nav>
                             <ul>
                                 <li>
                                     <a asp-page="/Index">صفحه اصلی</a>
                                 </li>
-
-
-
                                 <li class="menu-item-has-children">
-                                    <a >محصولات</a>
+                                    <a>محصولات</a>
                                     <ul class="sub-menu">
                                         @foreach (var category in Model.ProductCategories)
                                         {
-                                            <li>
-                                                <a asp-page="./ProductCategory" asp-route-id="@category.Slug">@category.Name</a>
-                                            </li>
-                                        }
-
+                            <li>
+                                <a asp-page="./ProductCategory" asp-route-id="@category.Slug">@category.Name</a>
+                            </li>}
                                     </ul>
                                 </li>
-
                                 <li class="menu-item-has-children">
-                                    <a >مقالات</a>
+                                    <a>مقالات</a>
                                     <ul class="sub-menu">
                                         @foreach (var category in Model.ArticleCategories)
                                         {
-                                            <li>
-                                                <a asp-page="./ArticleCategory" asp-route-id="@category.Slug">@category.Name</a>
-                                            </li>
-                                        }
+                            <li>
+                                <a asp-page="./ArticleCategory" asp-route-id="@category.Slug">@category.Name</a>
+                            </li>}
                                     </ul>
                                 </li>
-                                
-                                
-
                                 <li>
-                                    <a href="contact.html">تماس با ما </a>
+                                    <a href="contact.html">تماس با ما</a>
                                 </li>
-                                
-                                @if (!AuthHelper.IsAuthenticated())
+                                @if (AuthHelper.IsAuthenticated())
                                 {
-                                    <li>
-                                        <a asp-page="/Account">ورود</a>
-                                    </li>
-                                }
+                    <li>
+                        <a asp-page="/Account" asp-page-handler="Logout">خروج</a>
+                    </li> }
                                 else
                                 {
-                                    <li>
-                                        <a asp-page="/Account" asp-page-handler="Logout">خروج</a>
-                                    </li>
-                                }
-
+                    <li>
+                        <a asp-page="/Account">وورد / ثبت نام</a>
+                    </li>}
                             </ul>
                         </nav>
                     </div>
-                    <!-- header icon -->
                     <div class="header-icon-wrapper">
                         <ul class="icon-list">
                             <li>
@@ -87,88 +64,14 @@
                                 <div class="header-cart-icon">
                                     <a href="#" id="minicart-trigger">
                                         <i class="ion-bag"></i>
-                                        <span class="counter">3</span>
+                                        <span class="counter" id="cart_items_count">0</span>
                                     </a>
-                                    <!-- mini cart  -->
                                     <div class="mini-cart" id="mini-cart">
-                                        <div class="cart-items-wrapper ps-scroll">
-                                            <div class="single-cart-item">
-                                                <a href="javascript:void(0)" class="remove-icon">
-                                                    <i class="ion-android-close"></i>
-                                                </a>
-                                                <div class="image">
-                                                    <a href="single-product.html">
-                                                        <img src="assets/img/products/product-1-80x106.jpg"
-                                                             class="img-fluid" alt="">
-                                                    </a>
-                                                </div>
-                                                <div class="content">
-                                                    <p class="product-title">
-                                                        <a href="single-product.html">Cillum dolore furniture</a>
-                                                    </p>
-                                                    <p class="count"><span>1 x </span> $402</p>
-                                                </div>
-                                            </div>
-                                            <div class="single-cart-item">
-                                                <a href="javascript:void(0)" class="remove-icon">
-                                                    <i class="ion-android-close"></i>
-                                                </a>
-                                                <div class="image">
-                                                    <a href="single-product.html">
-                                                        <img src="assets/img/products/product-2-80x106.jpg"
-                                                             class="img-fluid" alt="">
-                                                    </a>
-                                                </div>
-                                                <div class="content">
-                                                    <p class="product-title">
-                                                        <a href="single-product.html">Lorem ipsum furniture</a>
-                                                    </p>
-                                                    <p class="count"><span>1 x </span> $500</p>
-                                                </div>
-                                            </div>
-                                            <div class="single-cart-item">
-                                                <a href="javascript:void(0)" class="remove-icon">
-                                                    <i class="ion-android-close"></i>
-                                                </a>
-                                                <div class="image">
-                                                    <a href="single-product.html">
-                                                        <img src="assets/img/products/product-3-80x106.jpg"
-                                                             class="img-fluid" alt="">
-                                                    </a>
-                                                </div>
-                                                <div class="content">
-                                                    <p class="product-title">
-                                                        <a href="single-product.html">Cillum dolore tool</a>
-                                                    </p>
-                                                    <p class="count"><span>1 x </span> $607</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="cart-calculation">
-                                            <table class="table">
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="text-right">Sub-Total :</td>
-                                                        <td class="text-left">$220.00</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="text-right">Eco Tax (-2.00) :</td>
-                                                        <td class="text-left">$6.00</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="text-right">VAT (20%) :</td>
-                                                        <td class="text-left">$44.00</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="text-right">Total :</td>
-                                                        <td class="text-left">$270.00</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                        <div class="cart-items-wrapper ps-scroll" id="cart_items_wrapper">
+
                                         </div>
                                         <div class="cart-buttons">
-                                            <a href="cart.html">VIEW CART</a>
-                                            <a href="checkout.html">CHECKOUT</a>
+                                            <a asp-page="/Cart">مشاهده سبد خرید</a>
                                         </div>
                                     </div>
                                 </div>
@@ -184,30 +87,18 @@
                                         </div>
                                     </a>
 
-                                    <!-- settings menu -->
                                     <div class="settings-menu-wrapper" id="settings-menu-wrapper">
                                         <div class="single-settings-block">
-                                            <h4 class="title">پروفایل من</h4>
+                                            <h4 class="title">پروفایل من </h4>
                                             <ul>
                                                 <li>
-                                                    <a href="login-register.html">ثبت نام</a>
+                                                    <a asp-page="/Account">ثبت نام</a>
                                                 </li>
-                                                @if (!AuthHelper.IsAuthenticated())
-                                                {
-                                                    <li>
-                                                        <a asp-page="/Account">ورود</a>
-                                                    </li>
-                                                }
-                                                else
-                                                {
-                                                    <li>
-                                                        <a asp-page="/Account" asp-page-handler="Logout">خروج</a>
-                                                    </li>
-                                                }
-
+                                                <li>
+                                                    <a asp-page="/Account">ورود</a>
+                                                </li>
                                             </ul>
                                         </div>
-
                                         @*<div class="single-settings-block">
                                                 <h4 class="title">CURRENCY: USD </h4>
                                                 <ul>
@@ -224,33 +115,29 @@
                                                 <ul>
                                                     <li>
                                                         <a href="javascript:void(0)">
-                                                            <img src="assets/img/icons/en-gb.png" alt=""> English
+                                                            <img src="~/Theme/assets/img/icons/en-gb.png" alt=""> English
                                                         </a>
                                                     </li>
                                                     <li>
                                                         <a href="javascript:void(0)">
-                                                            <img src="assets/img/icons/de-de.png" alt=""> Germany
+                                                            <img src="~/Theme/assets/img/icons/de-de.png" alt=""> Germany
                                                         </a>
                                                     </li>
                                                 </ul>
                                             </div>*@
-
-
                                     </div>
                                 </div>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <!--=======  End of header wrapper  =======-->
-                <!--=======  mobile navigation area  =======-->
 
                 <div class="header-mobile-navigation d-block d-lg-none">
                     <div class="row align-items-center">
                         <div class="col-6 col-md-6">
                             <div class="header-logo">
                                 <a href="index.html">
-                                    <img src="assets/img/logo.png" class="img-fluid" alt="">
+                                    <img src="~/Theme/assets/img/logo.png" class="img-fluid" alt="">
                                 </a>
                             </div>
                         </div>
@@ -278,16 +165,10 @@
                         </div>
                     </div>
                 </div>
-
-                <!--=======  End of mobile navigation area  =======-->
-
             </div>
         </div>
     </div>
 </div>
-<!--====================  End of header area  ====================-->
-
-
 
 
 <div class="offcanvas-mobile-menu" id="offcanvas-mobile-menu">
@@ -300,7 +181,7 @@
         <div class="offcanvas-inner-content">
             <div class="offcanvas-mobile-search-area">
                 <form action="#">
-                    <input type="search" placeholder="جستجو">
+                    <input type="search" placeholder="جستجو ...">
                     <button type="submit">
                         <i class="fa fa-search"></i>
                     </button>
@@ -311,37 +192,33 @@
                     <li class="">
                         <a asp-page="/Index">صفحه اصلی</a>
                     </li>
-
                     <li class="menu-item-has-children">
-                        <a >محصولات</a>
+                        <a href="#">محصولات</a>
                         <ul class="sub-menu">
-                            @foreach (var category in Model.ProductCategories)
-                            {
-                                <li>
-                                    <a asp-page="./ProductCategory" asp-route-id="@category.Slug">@category.Name</a>
-                                </li>
-                            }
+                            <li>
+                                <a href="blog-left-sidebar.html">دکوری</a>
+                            </li>
+                            <li>
+                                <a href="blog-right-sidebar.html">نگه دارنده</a>
+                            </li>
                         </ul>
                     </li>
 
                     <li class="menu-item-has-children">
-                        <a>مقالات</a>
+                        <a href="#">مقالات</a>
                         <ul class="sub-menu">
-                            @foreach (var category in Model.ArticleCategories)
-                            {
-                                <li>
-                                    <a asp-page="./ArticleCategory" asp-route-id="@category.Slug">@category.Name</a>
-                                </li>
-                            }
+                            <li>
+                                <a href="blog-left-sidebar.html">گروه مقاله1</a>
+                            </li>
+                            <li>
+                                <a href="blog-right-sidebar.html">گروه مقاله2</a>
+                            </li>
                         </ul>
                     </li>
-                    
                     <li class="">
-                        <a asp-page="/Contact">تماس با ما </a>
+                        <a asp-page="/Contact">تماس با ما</a>
                     </li>
                 </ul>
-                
-
             </nav>
 
             <div class="offcanvas-settings">
@@ -353,18 +230,9 @@
                                 <li>
                                     <a href="login-register.html">ثبت نام</a>
                                 </li>
-                                @if (!AuthHelper.IsAuthenticated())
-                                {
-                                    <li>
-                                        <a asp-page="/Account">ورود</a>
-                                    </li>
-                                }
-                                else
-                                {
-                                    <li>
-                                        <a asp-page="/Account" asp-page-handler="Logout">خروج</a>
-                                    </li>
-                                }
+                                <li>
+                                    <a href="login-register.html">ورود</a>
+                                </li>
                             </ul>
                         </li>
                     </ul>
@@ -376,13 +244,14 @@
                     <div class="header-contact-info">
                         <ul class="header-contact-info__list">
                             <li>
-                                <i class="ion-android-phone-portrait"></i> <a href="tel://09366285660">
+                                <i class="ion-android-phone-portrait"></i>
+                                <a href="tel://12452456012">
                                     (1245) 2456
                                     012
                                 </a>
                             </li>
                             <li>
-                                <i class="ion-android-mail"></i> <a href="mailto:info@yourdomain.com">FazelSaeedi@iran.ir</a>
+                                <i class="ion-android-mail"></i> <a href="mailto:info@yourdomain.com">info@atriya.com</a>
                             </li>
                         </ul>
                     </div>
@@ -409,5 +278,4 @@
             </div>
         </div>
     </div>
-
 </div>

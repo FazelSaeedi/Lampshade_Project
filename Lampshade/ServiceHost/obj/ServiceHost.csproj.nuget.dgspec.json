@@ -2019,6 +2019,10 @@
               "target": "Package",
               "version": "[5.0.2, )"
             },
+            "Nancy": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
             "System.Security.Cryptography.Cng": {
               "target": "Package",
               "version": "[4.5.0, )"

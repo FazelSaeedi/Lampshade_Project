@@ -270,3 +270,9 @@ D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ServiceHost\obj\Debug\net5.0\
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Accounts\Role\Index.cshtml.g.cs
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Account.cshtml.g.cs
 D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\AccessDenied.cshtml.g.cs
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.Extensions.PlatformAbstractions.dll
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ServiceHost\bin\Debug\net5.0\Nancy.dll
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Cart.cshtml.g.cs
+D:\Projects\ASPNetCore\Lampshade_Project\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Checkout.cshtml.g.cs
